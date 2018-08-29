@@ -1,0 +1,50 @@
+<div *ngIf="radar" class="Container fluid">
+  <div class="row row-eq-height">
+    <div  class="col-md-4" style="background-color: white;">
+
+      <ol class="sidebar" class="list-group list-group-numbered">
+        <li class="list-group-item">{{radar._name}}
+          <ol class="list-group list-group-alpha">
+            <li class="list-group-item" *ngFor="let name of entityTypes; index as i">
+              <button (click)="showDetails(radar,name._iconId)">{{name._name}}</button>
+            </li>
+          </ol>
+        </li>
+      </ol>
+
+    </div>
+
+    <div class="col-md-8" style="background-color: white;">
+
+        <div class="details" *ngIf="selectedRadar">
+
+            <div>
+              <span>Name: </span>{{entityType._name}}
+            </div>
+            <br/>
+            <div>
+              <span>ID: </span>{{entityType._iconId}}
+            </div>
+            <br/>
+          
+            <div>
+              <span>Group Name: </span>{{selectedRadar._name}}
+            </div>
+          
+            <div>
+              <span>Icon: </span> <img style="margin-top: 50px" src="{{entityType.Icon._iconName}}" height="100" alt="Smiley face">
+              
+            </div>
+          </div>
+          
+          
+          <!-- <pre>{{selectedRadar|json}}</pre> -->
+  
+      </div>
+  </div>
+
+</div>
+
+
+
+

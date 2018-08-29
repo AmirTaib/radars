@@ -1,0 +1,26 @@
+{
+    "EntityTypes": [
+      {
+        "Icon": {
+          "_iconId": 11,
+          "_iconName": "assets/icons/radars/GSensor.png"
+        },
+        "_entityTypeId": 2,
+        "_iconId": 11,
+        "_name": "GenericRadar"
+      },
+      {
+        "Icon": {
+          "_iconId": 12,
+          "_iconName": "assets/icons/radars/GreenRadar.png"
+        },
+        "_entityTypeId": 3,
+        "_iconId": 12,
+        "_name": "GreenRadar"
+      }
+    ],
+    "_groupId": 1,
+    "_name": "Radars",
+    "_systemId": 1,
+    "_visible": true
+  }

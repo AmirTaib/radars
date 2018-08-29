@@ -1,0 +1,11 @@
+
+.row div {
+    border: 1px solid lightgrey;
+  }
+  
+  .mh1 div {
+    height: 20vh; 
+  }
+  .mh2 div {
+    height: 80vh; 
+  }
